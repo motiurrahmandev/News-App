@@ -26,7 +26,7 @@ function reload (){
 function bindData(articles) {
   const cardContainer = document.querySelector(".cards-container");
   cardContainer.innerHTML = "";
-  articles.forEach(article => {
+  articles.forEach((article) => {
     if (article.urlToImage !== null) {
       const date = new Date(article.publishedAt).toLocaleTimeString()
       cardContainer.innerHTML += ` <div class="card">
