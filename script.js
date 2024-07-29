@@ -14,7 +14,7 @@ window.addEventListener("load", () => fetchNews("India"));
 async function fetchNews(query) {
   const res = await fetch(`${baseUrl}${query}&apikey=${API_KEY}`);
   const data = await res.json();
-  bindData(data.articles)
+  bindData(data.articles);
 }
 
 function reload (){
@@ -41,7 +41,7 @@ function bindData(articles) {
       </div>`
     }
   
-  })
+  });
 }
 
 
